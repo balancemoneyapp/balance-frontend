@@ -1,0 +1,36 @@
+.User {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  button {
+    color: var(--white-color);
+    background: transparent;
+  }
+
+  > a,
+  > a:visited {
+    color: var(--white-color);
+  }
+
+  .UserMenu {
+    position: absolute;
+    top: 100%;
+    right: calc(var(--padding) * -1);
+    background: var(--offset-color);
+    display: grid;
+    width: max-content;
+    padding: var(--padding-half);
+    gap: 10px;
+
+    display: none;
+  }
+
+  &.Open {
+    .UserMenu {
+      display: grid;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+textarea {
+  resize: none;
+  padding: var(--padding-half);
+  margin: var(--padding-half);
+  margin: var(--padding-half);
+  /* Text areas are special with width. Just subtract the extra padding. */
+  width: calc(100% - var(--padding));
+  box-sizing: border-box;
+}
